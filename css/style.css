@@ -998,6 +998,9 @@ main.main{
         max-height: 74.17%;
         max-width: 73.8358%;
     }
+    .collection__slider-prev, .collection__slider-next{
+        display: none;
+    }
 }
 .testimonials{
     margin-top: 76px;
