@@ -730,7 +730,7 @@ main.main{
         flex-direction: column;
     }
     .hero__slider {
-        margin: 166px 0px 110px;
+        margin: 166px 0px 60px;
         overflow: visible;
         padding: 0;
         display: flex;
@@ -792,6 +792,12 @@ main.main{
         background: rgba(14, 58, 57, 0.12);
         bottom: -148px;
         left: -132px;
+    }
+    .hero__slider-prev, .hero__slider-next{
+        display: none;
+    }
+    .hero__slider-bottom{
+        bottom: 60px !important;
     }
 }
 
