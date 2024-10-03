@@ -40,6 +40,7 @@ let swiper = new Swiper(".collection__slider-content", {
 });
 let shopbySwiper = new Swiper(".shopby__slider", {
     loop: false,
+    centeredSlides: true,
     spaceBetween: 16,
     initialSlide: 1,
     slidesPerView: 1.1,

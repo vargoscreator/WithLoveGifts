@@ -242,12 +242,17 @@ main.main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 22px 0;
 }
 .header__logo{
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 109px;
+    width: 100%;
+}
+.header__logo img {
+    width: 100%;
 }
 .header__menu{
     width: 100%;
@@ -265,6 +270,7 @@ main.main{
     color: #0E3A39;
     font-weight: 600;
     line-height: 24px; /* 120% */
+    user-select: none;
 }
 .header__burger{
     display: none;
@@ -398,7 +404,7 @@ main.main{
         padding: 15px 0;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
     .header__delivery{
         font-size: 16px;
     }
@@ -407,15 +413,10 @@ main.main{
         max-height: 20px;
     }
     .header__inner{
-        padding: 0;
+        padding: 9px 0px;
     }
     .header__logo {
-        max-width: 114px;
-        height: 64px;
-        overflow: hidden;
-    }
-    .header__logo img {
-        width: 130%;
+        max-width: 119px;
     }
 }
 @media (max-width: 400px) {
@@ -661,7 +662,9 @@ main.main{
     align-items: center;
     justify-content: space-between;
     gap: 26px;
-    animation: blockSliderScroll 20s linear infinite;
+    animation: blockSliderScroll 30s linear infinite;
+    will-change: transform;
+    pointer-events: none;
 }
 .personalization__icon{
     display: flex;
@@ -678,10 +681,10 @@ main.main{
 }
 @keyframes blockSliderScroll {
     0% {
-      transform: translateX(0px);
+      transform: translate3d(0%, 0, 0);;
     }
     100% {
-      transform: translateX(-690px);
+      transform: translate3d(-1413px, 0, 0);;
     }
 }
 @media (max-width: 1190px) {
@@ -991,9 +994,6 @@ main.main{
     .collection__descr{
         margin-top: 8px;
     }
-    .product__item-image{
-        height: 208px;
-    }
     .product__item-image img {
         max-height: 74.17%;
         max-width: 73.8358%;
@@ -1244,7 +1244,10 @@ main.main{
     }
     .shopby__slider-navigation{
         margin-top: 50px;   
-        justify-content: space-between;
+        justify-content: center;
+    }
+    .shopby__slider-prev, .shopby__slider-next{
+        display: none;
     }
 }
 .banner{
@@ -1669,7 +1672,7 @@ main.main{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 144px;
+    max-width: 141px;
 }
 .footer__logo img{
     width: 100%;
