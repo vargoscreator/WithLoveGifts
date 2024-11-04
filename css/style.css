@@ -1295,36 +1295,6 @@ main.main{
     font-weight: 400;
     line-height: 28px;
 }
-.shopby__slider-navigation{
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    justify-content: center;
-}
-.shopby__slider-prev,
-.shopby__slider-next{
-    border-radius: 100px;
-    background: rgba(255, 255, 255, 0.24);
-    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.14);
-    backdrop-filter: blur(2px);
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-.shopby__slider-pagination{
-    position: initial;
-    margin: 0;
-}
-.shopby__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background-color: #fff;
-}
 @media (max-width: 1279px) {
     .shopby__slide-image{
         height: 230px;
