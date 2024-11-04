@@ -94,3 +94,33 @@ if (document.querySelector('.popupdiscount')) {
         });
     });
 }
+
+
+const headerTransparent = document.querySelector('.header-transparent');
+const handleScroll = () => {
+    if (headerTransparent) {
+        if (window.scrollY > 10) {
+            headerTransparent.classList.add('scroll');
+        } else {
+            headerTransparent.classList.remove('scroll');
+        }
+    }
+
+};
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll);
+handleScroll();
+
+
+window.addEventListener('load', setMarginTop);
+window.addEventListener('resize', setMarginTop);
+function setMarginTop() {
+    const header = document.querySelector('header');
+    const main = document.querySelector('main');
+    
+    const headerHeight = header.offsetHeight; 
+    main.style.marginTop = headerHeight + 'px';
+}
+
+// Вызываем функцию при загрузке страницы и изменении размера окна
+setMarginTop();
