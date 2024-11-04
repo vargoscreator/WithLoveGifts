@@ -38,31 +38,6 @@ let swiper = new Swiper(".collection__slider-content", {
         },
     },
 });
-let shopbySwiper = new Swiper(".shopby__slider", {
-    loop: false,
-    centeredSlides: true,
-    spaceBetween: 16,
-    initialSlide: 1,
-    slidesPerView: 1.1,
-    navigation: {
-        nextEl: ".shopby__slider-next",
-        prevEl: ".shopby__slider-prev",
-    },
-    pagination: {
-        el: ".shopby__slider-pagination",
-        clickable: true
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 3,
-            centeredSlides: false,
-        },
-        1000: {
-            slidesPerView: 4,
-            centeredSlides: false,
-        },
-    },
-});
 let testimonialsSwiper = new Swiper(".testimonials__slider", {
     loop: false,
     spaceBetween: 12,

@@ -350,7 +350,7 @@ main.main{
     text-transform: uppercase;
 }
 .header__link-block ul{
-    margin-top: 28px;
+    margin-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -930,9 +930,6 @@ main.main{
     object-position: center;
     transition: all .7s ease;
 }
-.product__item-image:hover img{
-    transform: scale(1.1);
-}
 .product__item-content{
    flex: 1;
    padding: 0 8px;
@@ -1269,8 +1266,13 @@ main.main{
 .shopby-bg:first-of-type{
     background-image: url('../img/shopby/bg.svg');
 }
-.shopby__slider{
+.shopby__block{
     margin-top: 50px;
+}
+.shopby__block{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 }
 .shopby__slide-image{
     display: flex;
@@ -1323,21 +1325,25 @@ main.main{
 .shopby__slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background-color: #fff;
 }
+@media (max-width: 1279px) {
+    .shopby__slide-image{
+        height: 230px;
+    }
+}
+@media (max-width: 999px) {
+    .shopby__block{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .shopby__slide-image{
+        height: 175px;
+    }
+}
 @media (max-width: 767px) {
     .shopby{
         padding: 50px 0 345px;
     }
-    .shopby__slider{
-        width: 100%;
-        max-width: 300px;
+    .shopby__block{
         margin: 32px auto 0;
-    }
-    .shopby__slider-navigation{
-        margin-top: 50px;   
-        justify-content: center;
-    }
-    .shopby__slider-prev, .shopby__slider-next{
-        display: none;
     }
 }
 .banner{
