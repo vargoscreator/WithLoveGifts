@@ -2435,6 +2435,7 @@ h1{
     height: 40px;
     cursor: pointer;
     position: relative;
+    user-select: none;
 }
 .collections__filters-block::before{
     content: '';
@@ -2476,6 +2477,9 @@ h1{
 }
 .collections__filters-item.active .collections__filters-content{
     display: flex;
+}
+.collections__filters-item.active .collections__filters-block::before{
+    transform: translateY(-50%) rotate(-180deg);
 }
 .collections__filters-header{
     padding: 9px 11px;

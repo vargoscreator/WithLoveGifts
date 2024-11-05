@@ -80,16 +80,16 @@ const filterItem = document.querySelectorAll('.collections__filters-item');
 const filterBlock = document.querySelectorAll('.collections__filters-block');
 
 filterBlock.forEach(block => {
-    block.addEventListener('click', function() {
-        filterItem.forEach(item => {
-            item.classList.remove('active');
-        });
+    block.addEventListener('click', () => {
         const closestItem = block.closest('.collections__filters-item');
         if (closestItem) {
-            closestItem.classList.toggle('active');
+            const isActive = closestItem.classList.contains('active');
+            filterItem.forEach(item => item.classList.remove('active'));
+            if (!isActive) closestItem.classList.add('active');
         }
     });
 });
+
 
 document.addEventListener('click', function(event) {
     if (![...filterItem].some(item => item.contains(event.target))) {
