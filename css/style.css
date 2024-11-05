@@ -1535,7 +1535,7 @@ h1{
     }
 }
 .choose{
-    padding: 80px 0 50px;
+    padding: 80px 0;
 }
 .choose__title{
     text-align: center;
@@ -2692,6 +2692,8 @@ input.radio:checked + .filter-label::before {
 }
 
 
+
+
 /* variant2 */
 .variant2{
     margin-top: 40px;
@@ -2726,9 +2728,6 @@ input.radio:checked + .filter-label::before {
 }
 .variant2__bg{
     display: none;
-}
-.choose-variant-2{
-    padding-bottom: 80px;
 }
 @media (max-width: 767px) {
     .variant2 {
